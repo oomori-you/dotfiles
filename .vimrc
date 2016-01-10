@@ -7,7 +7,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
@@ -43,10 +43,14 @@ set statusline+=%*
 
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'szw/vim-tags'
+
 " taglist
 set tags=~/.tags
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]> 
+
+
+call neobundle#end()
 
 let Tlist_Ctags_Cmd = "/usr/local/Cellar/ctags/5.8/bin/ctags"
 let Tlist_Show_One_File = 1
