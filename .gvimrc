@@ -10,6 +10,8 @@ hi PmenuSel guifg=#222222 guibg=#7066FF
 hi PmenuSbar guifg=#000000 guibg=#FFFFFF
 hi LineNr ctermbg=black guifg=#8F908A
 
-autocmd VimEnter * VimFilerExplorer /Users/oomori/prj
+set guifont=Ricty:h15
+
+autocmd VimEnter * VimFilerExplorer -winwidth=30  /Users/oomori/prj
 vsplit
 
