@@ -49,6 +49,10 @@ set tags=~/.tags
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]> 
 
+NeoBundle 'cohama/lexima.vim'
+let g:lexima_enable_basic_rules = 0
+
+NeoBundle 'tpope/vim-surround'
 
 call neobundle#end()
 
@@ -84,7 +88,9 @@ au BufNewFile,BufRead *.py	set expandtab tabstop=8 shiftwidth=2 softtabstop=2 au
 " javascript
 au BufNewFile,BufRead *.js	set expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent
 " html
-au BufNewFile,BufRead *.html	set expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent
+au BufNewFile,BufRead *.html set expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent
+" twig
+au BufNewFile,BufRead *.twig set expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent filetype=htmldjango
 " tpl
 au BufNewFile,BufRead *.tpl set expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent
 " xml
