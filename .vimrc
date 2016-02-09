@@ -144,6 +144,9 @@ set laststatus=2
 set nobackup
 set ic
 
+" カーソルラインを強調表示
+set cursorline
+
 "actionscript setting
 autocmd BufNewFile,BufRead *.as set filetype=actionscript
 syntax on
@@ -161,11 +164,8 @@ aug END
 
 set runtimepath+=~/.vim/plugin/
 
-set imdisable	" 挿入モードから抜ける際にIMEを強制的に切る
-
 set modifiable
 set write
-
 
 "" 分割した設定ファイルをすべて読み込む
 "set runtimepath+=~/.vim/
