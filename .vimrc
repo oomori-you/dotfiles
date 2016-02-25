@@ -54,6 +54,8 @@ let g:lexima_enable_basic_rules = 0
 
 NeoBundle 'tpope/vim-surround'
 
+NeoBundle 'rking/ag.vim'
+
 call neobundle#end()
 
 let Tlist_Ctags_Cmd = "/usr/local/Cellar/ctags/5.8/bin/ctags"
@@ -124,7 +126,6 @@ hi Cursor guifg=bg guibg=Gray gui=NONE
 hi CursorIM guifg=NONE guibg=Purple gui=NONE
 set iminsert=0 imsearch=0
 inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
-inoremap <silent> jj <ESC>
 
 "カーソルキーで行末／行頭の移動可能に設定。
 set whichwrap=b,s,[,],<,>
