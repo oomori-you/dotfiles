@@ -55,6 +55,8 @@ let g:lexima_enable_basic_rules = 0
 NeoBundle 'tpope/vim-surround'
 
 NeoBundle 'rking/ag.vim'
+let g:ag_highlight=1
+let g:ag_qhandler="copen 10"
 
 call neobundle#end()
 
