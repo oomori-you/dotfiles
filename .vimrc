@@ -104,7 +104,6 @@ au BufNewFile,BufRead *.yml	set expandtab tabstop=2 shiftwidth=2 softtabstop=2 a
 " sql
 au BufNewFile,BufRead *.sql	set expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent
 
-
 " ステータスライン関連
 set statusline=%F%m%r%h%w\%=[%Y]\[%{&ff}]\[%{&fileencoding}]\[%v,%l/%L]
 
@@ -169,6 +168,8 @@ set runtimepath+=~/.vim/plugin/
 
 set modifiable
 set write
+
+set clipboard=unnamed,autoselect
 
 "" 分割した設定ファイルをすべて読み込む
 "set runtimepath+=~/.vim/
