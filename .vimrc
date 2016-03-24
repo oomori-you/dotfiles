@@ -169,8 +169,6 @@ set runtimepath+=~/.vim/plugin/
 set modifiable
 set write
 
-set clipboard=unnamed,autoselect
-
 "" 分割した設定ファイルをすべて読み込む
 "set runtimepath+=~/.vim/
 "runtime! userautoload/*.vim
