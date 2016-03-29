@@ -58,6 +58,8 @@ NeoBundle 'rking/ag.vim'
 let g:ag_highlight=1
 let g:ag_qhandler="copen 10"
 
+NeoBundle 'mattn/emmet-vim'
+
 call neobundle#end()
 
 let Tlist_Ctags_Cmd = "/usr/local/Cellar/ctags/5.8/bin/ctags"
